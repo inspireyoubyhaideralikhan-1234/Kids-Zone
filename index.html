@@ -7,6 +7,7 @@
   <title>Kids Zone | Fun Learning for Toddlers</title>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="Utilities/bootstrap.min.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
 
     <a href="index.html" class="logo">🌈 Kids Zone</a>
 
-    <div class="page-links">
+    <div class="page-links bg d-none d-md-block">
 
       <a href="abcupper.html">ABC</a>
 
@@ -44,6 +45,50 @@
       <a href="contact.html">Contact</a>
 
     </div>
+
+    <div class="mobile-menu d-block d-md-none">
+
+      <span id="mobileIcon" class="menu-icon">☰</span>
+      <div id="mobileMenu" class="mobile-links d-flex flex-column gap-3 text d-none"
+        style="margin-top: 550px; background-color: red; width: 200px; padding: 20px; display: none;">
+
+        <a href="abcupper.html">ABC</a>
+
+        <a href="abclower.html">abc</a>
+
+        <a href="numbers.html">123</a>
+
+        <a href="tables.html">Tables</a>
+
+        <a href="rhymes.html">Rhymes</a>
+
+        <a href="colors.html">Colors</a>
+
+        <a href="animals.html">Animals</a>
+
+        <a href="vegetables.html">Veggies</a>
+
+        <a href="days.html">Days</a>
+
+        <a href="months.html">Months</a>
+
+        <a href="addition.html">+ Add</a>
+
+        <a href="subtraction.html">− Sub</a>
+
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <script>
+      const mobileIcon = document.getElementById('mobileIcon');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      mobileIcon.addEventListener('click', () => {
+        console.log('Mobile menu icon clicked');
+        mobileMenu.classList.toggle('mobileShow');
+      });
+    </script>
 
   </nav>
 
@@ -303,8 +348,10 @@
 
   <footer>
 
-    <div class="heading_main"><h1>Kidz Zone</h1></div>
-    
+    <div class="heading_main">
+      <h1>Kidz Zone</h1>
+    </div>
+
     <p>Kidz Zone is a place where we can teach our children how to learn so much things</p>
 
     <hr class="hr">

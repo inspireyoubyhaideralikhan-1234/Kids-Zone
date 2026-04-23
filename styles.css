@@ -899,8 +899,7 @@ textarea {
 }
 
 .left {
-    width: 40%;
-    background: linear-gradient(90deg, #ff6b9d, #ff8c42, #ffd166);
+    width: 60%;
     color: white;
     padding: 30px;
 }
@@ -955,12 +954,15 @@ textarea {
 }
 
 .right {
-    width: 60%;
-    background: linear-gradient(90deg, #ffd166, #ff8c42, #ff6b9d);
+    width: 40%;
     display: flex;
-    border-left: 2px solid peachpuff;
     justify-content: center;
     align-items: center;
+}
+
+.left h2 {
+    color: grey;
+    text-align: center;
 }
 
 .right img {
@@ -1017,4 +1019,8 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 12px;
+}
+/* Mobile Styles */
+.mobileShow {
+  display: flex;
 }
