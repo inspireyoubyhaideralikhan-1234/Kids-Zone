@@ -50,7 +50,7 @@
 
     <div id="drawer">
 
-      <p id="cross" style="position: absolute; margin-left: 140px;">❌</p>
+      <p id="cross" style="position: absolute; cursor: pointer; margin-left: 140px;">❌</p>
 
       <a href="abcupper.html">ABC</a>
 
@@ -87,6 +87,12 @@
     document.getElementById('menu-icon').addEventListener('click', function () {
 
       document.getElementById('drawer').style.display = 'block';
+
+    });
+
+    document.getElementById('cross').addEventListener('click', function () {
+
+      document.getElementById('drawer').style.display = 'none';
 
     });
 
